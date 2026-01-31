@@ -224,5 +224,18 @@
 			});
 		})();
 	</script>
+
+	<script>
+		// When the secret button is clicked from the index page, set a short-lived flag
+		// so the secret page knows the user came from here and can auto-reveal.
+		document.addEventListener('DOMContentLoaded', function(){
+			const secretBtn = document.getElementById('secret-btn');
+			if (secretBtn) {
+				secretBtn.addEventListener('click', function(){
+					sessionStorage.setItem('secret-revealed','1');
+				});
+			}
+		});
+	</script>
 </body>
 </html>

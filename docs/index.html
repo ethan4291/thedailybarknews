@@ -225,5 +225,12 @@
 			});
 		})();
 	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			const secretBtn = document.getElementById('secret-btn');
+			if (secretBtn) secretBtn.addEventListener('click', () => sessionStorage.setItem('secret-revealed','1'));
+		});
+	</script>
 </body>
 </html>
