@@ -1,6 +1,5 @@
 .venv/
 dist/
-docs/
 __pycache__/
 *.pyc
 *.pyo
