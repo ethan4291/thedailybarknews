@@ -2,7 +2,9 @@
 from flask import Flask, render_template
 
 
-app = Flask(__name__)
+# Configure Flask to look for templates in the repository root (so root HTML files
+# like `index.html` and `secret.html` are found by render_template).
+app = Flask(__name__, template_folder='.')
 
 
 # You can modify this information about the dogs here
