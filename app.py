@@ -13,7 +13,7 @@ dogs = {
     'bella': {
         'name': 'Bella',
         'breed': 'Cavalier King Charles Spaniel',
-        'age': '8 years old',
+        'age': '9 years old',
         'description': 'Bella loves to eat sleep and more!',
         'fun_fact': 'Bella can catch treats in the air sometimes',
         # Change this to the path of your image file for Bella
